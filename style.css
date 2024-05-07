@@ -1,0 +1,274 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    color: grey;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(OpenSans_Condensed-Regular.ttf);
+}
+
+body {
+    width: 1440px;
+    font-family: Raleway;
+    position: relative;
+}
+
+header {
+    height: 135px;
+    align-items: center;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between
+}
+
+header div.nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 20px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    height: 602px;
+    padding: 62px 78px;
+    background-color: white;
+    align-items: center;
+}
+
+.head {
+    font-weight: 900;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.main input.tx {
+    width: 320px;
+    margin-right: 25px;
+    box-shadow: none;
+    border: 3px black solid;
+    position: relative
+}
+
+.next {
+    height: 886px;
+    background-image: linear-gradient(to bottom, white 178px, hsl(240deg 75% 98.43%) 178px);
+    position: relative;
+    padding: 288px 78px 107px;
+}
+
+.next>img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.next .txx {
+    width: 660px;
+}
+
+.next .txx .link {
+    text-decoration: underline #3da08f 2px;
+    color: #3da08f;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.next .txx .link:hover {
+    color: #57eed5;
+    text-decoration-color: #46c0ac;
+}
+
+.next .txx .comment {
+    width: 358px;
+    height: 218px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px 0 black;
+    padding: 25px 40px 27px 34px;
+    display: grid;
+    grid-template-rows: 19px 15px 85px 17px 22px 17px;
+    grid-template-columns: 19px 19px 105px 147px;
+    align-items: center;
+}
+
+.stext {
+    font-size: 14px;
+}
+
+.shead {
+    font-size: 14px;
+    font-weight: 900;
+
+}
+
+.sstext {
+    font-size: 8px;
+}
+
+.prefoot {
+    background-color: hsl(238, 22%, 44%);
+    width: 100%;
+    height: 319px;
+    align-items: center;
+    padding: 70px;
+    color: white;
+}
+
+.prefoot .wtext {
+    flex-direction: column;
+    height: 162px;
+    width: 538px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.prefoot .wtext .title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.op {
+    font-family: opensans;
+}
+
+.prefoot .inp {
+    width: 482px;
+    height: 115px;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: 482px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+    box-shadow: 1px 6px 15px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    width: 203px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: hsl(224, 93%, 58%);
+    font-size: 16px;
+    box-shadow: 1px 6px 15px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+}
+
+input[type="button"]:hover {
+    background-color: hsl(224, 95%, 74%);
+}
+
+.foot {
+    width: 100%;
+    height: 393px;
+    background-color: hsl(243, 87%, 12%);
+    padding: 104px 74px;
+}
+
+.foot .grid {
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(4, 45px);
+    grid-template-columns: 236px 207px 81px 191px 94px 175px 127px;
+}
+
+.grid a {
+    color: white;
+}
+
+.left {
+    margin-left: 13px;
+}
+
+.error {
+    position: relative;
+    display: inline-block;
+    width: 345px;
+}
+
+.error div.err.hide {
+    display: none;
+}
+
+.err {
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    color: red;
+}
+
+div.err.w {
+    color: #ff8f8f;
+}
+
+input[type="text"].err {
+    border: 3px red solid;
+    top: 4px;
+    position: relative;
+}
+
+@media only screen and (min-width:1440px) {}
+
+@media only screen and (max-width:380px) {
+    body {
+        width: 375px;
+        border: 2px solid black;
+    }
+
+    header {
+        height: 113px;
+        width: 375px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+}
